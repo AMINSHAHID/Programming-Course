@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3rd Layout</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: Trebuchet MS;
+		}
+		#header{
+			    height: 95px;
+			width:100%;
+			background-color: #e5e5e5;
+			padding-top: 28px;
+			box-sizing: border-box;
+			padding-left: 10%;
+			padding-right: 15%;
+		}
+		#header-heading{
+			display: inline-block;
+			color: #4e4e4e;
+			float: left;
+		}
+		#navbar{
+			width: 40%;
+			float: right;
+			padding-top: 10px;
+		}
+		#navbar ul li{
+			list-style: none;
+			float: left;
+			margin-right: 13px;
+			color: #4e4e4e;
+			font-weight: bold;
+		}
+		#banner{
+			width: 100%;
+
+		}
+		#banner img{
+			width: 100%;
+		}
+		#main{
+			/*padding: 0px 2%;*/
+			max-width: 1200px;
+			margin: 0 auto;
+			height: 200px;
+		}
+		#shariq-container{
+			margin-top: 60px;
+		}
+		#shariq-container .container-items{
+			width: 24.2%;
+			height: 200px;
+			float: left;
+			margin-right: 12px;
+			padding-bottom: 60px;
+			text-align: center;
+		}
+		#shariq-container .container-items:nth-child(4){
+			margin-right: 0px;
+		}
+		#shariq-container .container-items img{
+			margin-bottom: 12px;
+		}
+		.container-items-heading{
+			margin-bottom: 12px;
+		    color: #4e4e4e;
+			font-size: 18px;
+		}
+		.container-items-paragraph{
+			font-size: 16px;
+		}
+		#latest-work{
+			border-top: 1px solid #dcdcdc;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1 id="header-heading">MARBLE</h1>
+		<div id="navbar">
+			<ul>
+				<li>HOME</li>
+				<li>ABOUT</li>
+				<li>JOURNAL</li>
+				<li>SERVICE</li>
+				<li>FEATURES</li>
+				<li>CONTACT</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="banner">
+		<img src="./assets/images/banner.jpg" alt="">
+	</div>
+
+	<div id="main">
+		<div id="shariq-container">
+			<div class="container-items">
+				<img src="./assets/images/icon-1.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+			<div class="container-items">
+				<img src="./assets/images/icon-2.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+			<div class="container-items">
+				<img src="./assets/images/icon-3.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+			<div class="container-items">
+				<img src="./assets/images/icon-4.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+		</div>
+
+
+		<div id="latest-work">&nbsp;</div>
+
+	</div>
+
+	
+</body>
+</html>
