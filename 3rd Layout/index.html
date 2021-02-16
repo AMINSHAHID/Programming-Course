@@ -10,14 +10,17 @@
 			padding: 0px;
 			font-family: Trebuchet MS;
 		}
+		body{
+			background-color: #f7f7f7;
+		}
 		#header{
-			    height: 95px;
+			height: 95px;
 			width:100%;
 			background-color: #e5e5e5;
 			padding-top: 28px;
 			box-sizing: border-box;
 			padding-left: 10%;
-			padding-right: 15%;
+			padding-right: 10%;
 		}
 		#header-heading{
 			display: inline-block;
@@ -59,6 +62,7 @@
 			margin-right: 12px;
 			padding-bottom: 60px;
 			text-align: center;
+
 		}
 		#shariq-container .container-items:nth-child(4){
 			margin-right: 0px;
@@ -77,6 +81,92 @@
 		#latest-work{
 			border-top: 1px solid #dcdcdc;
 			clear: both;
+		}
+		.latest-work-heading{
+			color: #4e4e4e;
+			margin-top: 60px;
+			margin-bottom: 20px;
+		}
+		.latest-cards-container{
+			margin-bottom: 40px;
+		}
+		.latest-card-items{
+			float: left;
+			width: 30%;
+			margin-right: 45px;
+			margin-bottom: 45px;
+		}
+		.latest-card-items:nth-child(3){
+			margin-right: 0px;
+		}
+		.latest-card-items-heading{
+			color: #4e4e4e;
+			font-size: 18px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.latest-card-items-paragraph-1{
+			color: #d0d0d0;
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		.latest-card-items-paragraph-2{
+			color: #5c5c5c;
+			font-size: 16px;
+		}
+		.testimonial-container{
+			width: 100%;
+			height: 240px;
+			clear: both;
+			background: #efefef;
+			text-align: center;
+			padding-top: 58px;
+			box-sizing: border-box;
+			margin-top: 20px;
+		}
+		.testimonial-container-img{
+			margin-bottom: 30px;
+		}
+		.testimonial-container-paragraph{
+			color: #a1a1a1;
+			font-size: 20px;
+		}
+		#footer{
+			width: 100%;
+			height: 350px;
+			background: #1d1d1d;
+			padding-top: 55px;
+		}
+		.footer-inner-container{
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.footer-items{
+			width: 23%;
+			float: left;
+			margin-right: 20px;
+		}
+		.footer-heading{
+			color: #6c6c6c;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.footer-pragraph{
+			color: #cacaca;
+			font-size: 14px;
+			line-height: 25px;
+		}
+		.line{
+			width: 100%;
+    		color: #363636;
+    		margin-top: 20px;
+		}
+		.footer-copyright{
+			clear: both;
+			margin-top: 80px;
+		}
+		.divider-border{
+			border-top: 1px solid #363636;
 		}
 	</style>
 </head>
@@ -124,10 +214,92 @@
 		</div>
 
 
-		<div id="latest-work">&nbsp;</div>
+		<div id="latest-work">
+			<h2 class="latest-work-heading">OUR LATEST WORKS</h2>
+
+			<div class="latest-cards-container">
+				<div class="latest-card-items">
+					<img src="./assets/images/snap-1.jpg" alt="image comming soon">
+					<h2 class="latest-card-items-heading">Nobis Business Card</h2>
+					<p class="latest-card-items-paragraph-1">Business Card, Graphic</p>
+					<p class="latest-card-items-paragraph-2">Sed posuere consectetur est at lobortis. Porta sagittis lacus</p>
+				</div>
+				<div class="latest-card-items">
+					<img src="./assets/images/snap-2.jpg" alt="image comming soon">
+					<h2 class="latest-card-items-heading">Nobis Business Card</h2>
+					<p class="latest-card-items-paragraph-1">Business Card, Graphic</p>
+					<p class="latest-card-items-paragraph-2">Sed posuere consectetur est at lobortis. Porta sagittis lacus</p>
+				</div>
+				<div class="latest-card-items">
+					<img src="./assets/images/snap-3.jpg" alt="image comming soon">
+					<h2 class="latest-card-items-heading">Nobis Business Card</h2>
+					<p class="latest-card-items-paragraph-1">Business Card, Graphic</p>
+					<p class="latest-card-items-paragraph-2">Sed posuere consectetur est at lobortis. Porta sagittis lacus</p>
+				</div>
+			</div>
+
+
+	
+			
+		</div>
 
 	</div>
 
+
+	<div class="testimonial-container">
+			<img src="./assets/images/quote.jpg" alt="image comming soon" class="testimonial-container-img">
+			<p class="testimonial-container-paragraph">
+				Cras mattis consectetvur purus sit amet fermentum. Donec id elit non mi porta gravida at <br />eget metus. Duis mollis, est non commodo luctus erat porttitor. 
+			</p>
+	</div>
 	
+
+	<div id="footer">
+		<div class="footer-inner-container">
+			<div class="footer-items">
+				<h3 class="footer-heading">GET IN TOUCH</h3>
+				<p class="footer-pragraph">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. </p>
+				<br>
+				<p class="footer-pragraph">Moonshine Street No: 14/05 </p>
+				<p class="footer-pragraph">Light City, Jupiter</p>
+				<p class="footer-pragraph">0247 541 65 87</p>
+				<p class="footer-pragraph">support@longwave.com</p>
+			</div>
+			<div class="footer-items">
+				<h3 class="footer-heading">TWITTER</h3>
+				<p class="footer-pragraph">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. </p>
+				<br>
+				<p class="footer-pragraph">Moonshine Street No: 14/05 </p>
+				<p class="footer-pragraph">Light City, Jupiter</p>
+				<p class="footer-pragraph">0247 541 65 87</p>
+				<p class="footer-pragraph">support@longwave.com</p>
+			</div>
+			<div class="footer-items">
+				<h3 class="footer-heading">POPULAR POSTS</h3>
+				<p class="footer-pragraph">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. </p>
+				<br>
+				<p class="footer-pragraph">Moonshine Street No: 14/05 </p>
+				<p class="footer-pragraph">Light City, Jupiter</p>
+				<p class="footer-pragraph">0247 541 65 87</p>
+				<p class="footer-pragraph">support@longwave.com</p>
+			</div>
+			<div class="footer-items">
+				<h3 class="footer-heading">ABOUT US</h3>
+				<p class="footer-pragraph">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. </p>
+				<br>
+				<p class="footer-pragraph">Moonshine Street No: 14/05 </p>
+				<p class="footer-pragraph">Light City, Jupiter</p>
+				<p class="footer-pragraph">0247 541 65 87</p>
+				<p class="footer-pragraph">support@longwave.com</p>
+			</div>
+
+			<div class="footer-copyright">
+			<br /><br />
+			<div class="divider-border">&nbsp;</div>
+			<br />
+			<p class="footer-pragraph">© 2013 Marble. All rights reserved. Theme by elemis.</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
