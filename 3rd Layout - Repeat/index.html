@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3rd Layout</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: Trebuchet MS;
+		}
+		body{
+			background-color: #f7f7f7;
+		}
+		#header{
+			height: 95px;
+			width:100%;
+			background-color: #e5e5e5;
+			padding-top: 28px;
+			box-sizing: border-box;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		#header-heading{
+			display: inline-block;
+			color: #4e4e4e;
+			float: left;
+		}
+		#navbar{
+			width: 40%;
+			float: right;
+			padding-top: 10px;
+		}
+		#navbar ul li{
+			list-style: none;
+			float: left;
+			margin-right: 13px;
+			color: #4e4e4e;
+			font-weight: bold;
+		}
+		#navbar ul li:hover{
+			color: #1abb9c;
+			cursor: pointer;
+		}
+		#banner{
+			width: 100%;
+
+		}
+		#banner img{
+			width: 100%;
+		}
+		#main{
+			/*padding: 0px 2%;*/
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		#shariq-container{
+			margin-top: 60px;
+		}
+		#shariq-container .container-items{
+			width: 24.2%;
+			height: 200px;
+			float: left;
+			margin-right: 12px;
+			padding-bottom: 60px;
+			text-align: center;
+
+		}
+		#shariq-container .container-items:nth-child(4){
+			margin-right: 0px;
+		}
+		#shariq-container .container-items img{
+			margin-bottom: 12px;
+		}
+		.container-items-heading{
+			margin-bottom: 12px;
+		    color: #4e4e4e;
+			font-size: 18px;
+		}
+		.container-items-paragraph{
+			font-size: 16px;
+		}
+		.clearfix::after{
+			clear: both;
+			content: '';
+			display: table;
+		}
+		.our-latest-container{
+			border-top: 1px solid #dcdcdc;
+			padding-top: 45px;
+		}
+		.latest-heading{
+			font-size: 18px;
+			color: #4e4e4e;
+			/*font-weight: 400;*/
+			font-style: bolder;
+			margin-bottom: 20px;
+		}
+		.latest-inner-container{
+
+		}
+		.latest-inner-items{
+			float: left;
+			width: 30%;
+			margin-right: 40px;
+		}
+		.latest-inner-heading{
+			color: #4e4e4e;
+			font-size: 18px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.latest-inner-paragraph-1{
+			font-size: 13px;
+			color: #a8a8a8;
+			margin-bottom: 20px;
+		}
+		.latest-inner-paragraph-2{
+			color: #666666;
+			font-size: 14px;
+		}
+		.testimonials-container{
+			background-color: #efefef;
+			width: 100%;
+			/*padding-top: 50px;*/
+			/*padding-bottom: 50px;*/
+			padding: 50px 0px;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.testimonial-paragraph{
+			color: #cacaca;
+			font-size: 20px;
+		}
+		.footer{
+			background-color: #1d1d1d;
+			padding-top: 40px;
+		}
+		.footer-container{
+			max-width: 1200px;
+			margin: 0 auto;
+			border-bottom: 1px solid #373737;
+			padding-bottom: 35px;
+		}
+		.footer-items{
+			float: left;
+			width: 22%;
+			margin-right: 20px;
+		}
+		.footer-heading{
+			color: #6c6c6c;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.footer-paragraph{
+			color: #c2c2c2;
+			font-size: 14px;
+			margin-bottom: 30px;
+		}
+		.footer-paragraph-two{
+			max-width: 1200px;
+			margin: 0 auto;
+			color: #c2c2c2;
+			font-size: 14px;
+			margin-top: 25px;
+			padding-bottom: 20px;	
+		}
+		.twitter-before-image::before{
+			content:'';
+			background-image: url('./assets/images/tweet.png');
+			background-repeat: no-repeat;
+			width: 13px;
+			height: 13px;
+			display: inline-block;
+			padding-left: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1 id="header-heading">MARBLE</h1>
+		<div id="navbar">
+			<ul>
+				<li>HOME</li>
+				<li>ABOUT</li>
+				<li>JOURNAL</li>
+				<li>SERVICE</li>
+				<li>FEATURES</li>
+				<li>CONTACT</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="banner">
+		<img src="./assets/images/banner.jpg" alt="">
+	</div>
+
+	<div id="main">
+		<div id="shariq-container" class="clearfix">
+			<div class="container-items">
+				<img src="./assets/images/icon-1.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+			<div class="container-items">
+				<img src="./assets/images/icon-2.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+			<div class="container-items">
+				<img src="./assets/images/icon-3.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+			<div class="container-items">
+				<img src="./assets/images/icon-4.jpg" alt="">
+				<h2 class="container-items-heading">Pellentesque</h2>
+				<p class="container-items-paragraph">Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+			</div>
+		</div>
+
+
+		<div class="our-latest-container" >
+			<h2 class="latest-heading">OUR LATEST WORK</h2>
+
+			<div class="latest-inner-container clearfix">
+				<div class="latest-inner-items">
+					<img src="./assets/images/snap-1.jpg" alt="">
+					<h3 class="latest-inner-heading">Nobis Business Card</h3>
+					<p class="latest-inner-paragraph-1">Business Card,Graphics</p>
+					<p class="latest-inner-paragraph-2">Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.</p>
+				</div>
+				<div class="latest-inner-items">
+					<img src="./assets/images/snap-2.jpg" alt="">
+					<h3 class="latest-inner-heading">New Fun Project</h3>
+					<p class="latest-inner-paragraph-1">Web Design, Application</p>
+					<p class="latest-inner-paragraph-2">Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. </p>
+				</div>
+				<div class="latest-inner-items">
+					<img src="./assets/images/snap-3.jpg" alt="">
+					<h3 class="latest-inner-heading">Passionaries Branding Cover</h3>
+					<p class="latest-inner-paragraph-1">Branding, Graphic Design</p>
+					<p class="latest-inner-paragraph-2">Curabitur blandit tempus porttitor. Donec id elit non mi porta </p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div class="testimonials-container">
+		<img src="./assets/images/quote.jpg" alt="comming soon">
+		<p class="testimonial-paragraph">Cras mattis consectetvur purus sit amet fermentum. Donec id eli</p>
+	</div>
+
+
+	<div class="footer">
+		<div class="footer-container clearfix">
+			<div class="footer-items">
+				<h2 class="footer-heading">Get In Touch</h2>
+				<p class="footer-paragraph">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+				<p class="footer-paragraph">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+				<p class="footer-paragraph">Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</p>
+			</div>
+			<div class="footer-items">
+				<h2 class="footer-heading">Get In Touch</h2>
+				<p class="footer-paragraph twitter-before-image">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+				<p class="footer-paragraph twitter-before-image">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+				<p class="footer-paragraph twitter-before-image">Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</p>
+			</div>
+			<div class="footer-items">
+				<h2 class="footer-heading">Get In Touch</h2>
+				<p class="footer-paragraph">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+				<p class="footer-paragraph">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+				<p class="footer-paragraph">Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</p>
+			</div>
+			<div class="footer-items">
+				<h2 class="footer-heading">Get In Touch</h2>
+				<p class="footer-paragraph">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+				<p class="footer-paragraph">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+				<p class="footer-paragraph">Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</p>
+			</div>
+		</div>
+
+		<p class="footer-paragraph-two">© 2013 Marble. All rights reserved. Theme by elemis.</p>
+		
+	</div>
+
+	
+
+</body>
+</html>
