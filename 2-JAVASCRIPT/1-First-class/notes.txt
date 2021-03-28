@@ -1,0 +1,16 @@
+Two Types of Programming Languages
+Server Side Languages
+    server -- xamp / wamp / laragon / apache
+    php/c sharp / dotnet / python / dart / go language/ ruby
+
+
+Client Side Languages
+------ Javascript 
+MOBILE APPLICATIONS (ANDROID/IOS)/ 
+DESKTOP APPLICATION for (MAC/WINDOWS/LINUX)
+
+VS CODE PACKAGE
+Live Server
+JavaScript (ES6) code snippets
+
+
