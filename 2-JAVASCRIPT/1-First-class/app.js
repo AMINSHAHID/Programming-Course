@@ -79,7 +79,6 @@ var NamingVariable = "working"; //pascal Case
 const muzammil = "muzammil is working";
 // muzammil = "musaddiq is working"; //we cannot change constant variable
 // console.log(muzammil);
-
 // in javascript every thing is object
 
 // Type conversion
@@ -158,4 +157,100 @@ val = firstName.concat(" ", lastName);
 // val = "Hello, World my name is "+firstName + ' ' +lastName +" and my age 'is 24";
 val = `Hello, World my name is ${firstName} ${lastName} and my age 'is 24`;
 
-console.log(val);
+// console.log(val);
+
+
+//ARRAY 
+//An array is a special variable, which can hold more than one value at a time.
+
+
+const fruits = ['mango','banana','apple']; //string = text
+const fruits2 = new Array('mango','banana','apple'); //string = text
+const mix = new Array(
+  11,
+  22,
+  'stirng',
+  true,
+  false,
+  null,
+  undefined,
+  ['working','working2'],
+  {a:1,b:2,c:3}
+  ); //string = text
+
+let mix2 = new Array(
+  {
+    name:'muzammil',
+    email:'muzammil.rafay@gmail.com',
+    status:'Active'
+  },
+  {
+    name:'muzammil',
+    email:'muzammil.rafay@gmail.com',
+    status:'Active'
+  },
+  {
+    name:'muzammil',
+    email:'muzammil.rafay@gmail.com',
+    status:'Active'
+  },
+  ); //string = text
+
+
+// console.log(mix2);
+// console.log(mix2.length);
+// console.log(Array.isArray(mix2));
+// console.log(Array.isArray('string'));
+
+mix2[1] = 2213123123;
+
+
+// console.log(numbers);
+// console.log(fruits);
+// console.log(fruits.indexOf('apple'));
+// console.log(fruits.indexOf('apple'));
+
+
+const numbers = [22,60,10,88,99]; //numbers
+
+
+// numbers.push(2000); //Add on the end of array
+// numbers.unshift(9999); //Add on the start of array
+// numbers.pop(); //remove array from end
+// numbers.pop(); //remove array from end
+// numbers.pop(); //remove array from end
+// numbers.shift(); //remove array from start
+// numbers.splice(1,1); //remove from array
+// numbers.splice(2,5); //remove from array
+// numbers.reverse();
+
+
+let testingArray = ['mango','fruits','apple','banana'];
+
+let val2 = testingArray.sort();
+
+val2 = numbers.sort();
+val2 = numbers.sort(function(x,y){
+  return x - y;
+  //ascending order
+});
+
+val2 = numbers.sort(function(x,y){
+  return y - x;
+  //descending order
+});
+
+val2 = numbers.find(function(num){
+  return num == 88;
+});
+
+//single value return
+
+
+console.log(val2);
+
+
+
+
+//check later
+// numbers.concat(new Array(22, 33, 44, 55));
