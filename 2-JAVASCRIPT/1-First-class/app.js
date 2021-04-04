@@ -207,7 +207,7 @@ mix2[1] = 2213123123;
 
 // console.log(numbers);
 // console.log(fruits);
-// console.log(fruits.indexOf('apple'));
+// console.log(fruits.indexOf('apple')); //2
 // console.log(fruits.indexOf('apple'));
 
 
@@ -216,8 +216,6 @@ const numbers = [22,60,10,88,99]; //numbers
 
 // numbers.push(2000); //Add on the end of array
 // numbers.unshift(9999); //Add on the start of array
-// numbers.pop(); //remove array from end
-// numbers.pop(); //remove array from end
 // numbers.pop(); //remove array from end
 // numbers.shift(); //remove array from start
 // numbers.splice(1,1); //remove from array
@@ -247,10 +245,95 @@ val2 = numbers.find(function(num){
 //single value return
 
 
-console.log(val2);
+// console.log(val2);
 
 
 
 
 //check later
 // numbers.concat(new Array(22, 33, 44, 55));
+
+const person = {
+  //string,numbers,boolean,null,undefined,array,objects
+  firstName:'Muzammil',
+  lastName:'Mustaqeem',
+  age:24,
+  email:'muzammil.rafay@gmail.com',
+  hobbies:['computer-gaming','books','tutorials','coding'],
+  address:{
+    country:'pakistan',
+    city:'Karachi',
+    fullAddress:'House # L-48 Sec 5-A 4 North Karachi'
+  },
+  getBirthYear: function(){
+    // return 1997;
+    // when we use this keyword
+    //this = current instance
+    return 2021 - this.age;
+  }
+};
+
+// console.log(person,"person");
+// console.log(person.getBirthYear(),"getBirthYear"); //invoking of function
+// console.log(person.firstName,person.lastName);
+// console.log(person.email); 
+
+
+// console.log(person['firstName']);
+// console.log(person['lastName']);
+// console.log(person['age']);
+// console.table(person);
+
+
+//array in objects
+const people = [
+  { name: 'Asad', age: 20 },
+  { name: 'Fahad', age: 20 },
+  { name: 'Shuja', age: 20 },
+  { name: 'Shariq', age: 50 }
+];
+
+// loop repeat
+
+//1st method 
+// for (let index = 0; index < people.length; index++) {
+//   console.log(people[index],"people",index);
+// }
+
+
+// people.map(function(singleObject,index){ //functions paramter 
+//   console.log(singleObject,"singlePeople",index);
+// })
+
+// console.log(people,"people");
+
+let valDate;
+
+
+const today = new Date();
+// let birthday = new Date('9-10-1981');
+let birthday = new Date('11-27-1996'); // Month-Date-Year
+// birthday = new Date('November 27 1996'); // Month Date Year
+birthday = new Date('11/27/1996');// Month Date Year
+
+valDate = today.getMonth() + 1; // -1
+// valDate = today.getDay(); // check later
+// valDate = today.getDate();// check later
+valDate = today.getFullYear();
+valDate = today.getMinutes();
+valDate = today.getHours();
+valDate = today.getSeconds();
+valDate = today.getMilliseconds();
+valDate = today.getTime();
+
+today.setMonth(0); // -1
+today.setDate(2); // -1
+today.setFullYear(1985);
+today.setHours(3);
+today.setMinutes(22);
+today.setSeconds(25);
+
+// console.log(today,"today");
+// console.log(birthday,"birthday");
+// console.log(today);
+console.log(today);
