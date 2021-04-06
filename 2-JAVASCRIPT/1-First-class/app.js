@@ -336,4 +336,179 @@ today.setSeconds(25);
 // console.log(today,"today");
 // console.log(birthday,"birthday");
 // console.log(today);
-console.log(today);
+// console.log(today);
+
+
+// https://www.w3schools.com/js/js_comparisons.asp
+
+// COMPARISON WORK MUZAMMIL
+
+// Comparison operators are used in logical statements to 
+// determine equality or difference between variables or values.
+
+// var muzammil = 8;
+// if(muzammil == 1){ // اگر
+//   // do something
+// } else { // مگر
+//   // do something else
+// }
+
+
+const id = 100;
+// == equal to
+// if(id == 101){ 
+//   console.log('Condition is Correct');
+// }else{
+//   console.log('Condition is In Correct');
+// }
+
+/* != not equal to */
+
+// if(id !== 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
+
+// Test if undefined
+// if(typeof id !== 'undefined'){
+//   console.log(`The ID is ${id}`);
+// } else {
+//   console.log('NO ID');
+// }
+
+
+// GREATER OR LESS THAN
+// > greater than
+// < less than
+// example of crocodile mouth
+
+// if(id < 400){ //400 greater than id
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
+
+
+
+
+// LOGICAL OPERATORS
+// && AND = both condition should be true
+// || OR = one condition should be true
+
+const name = 'Muzammil';
+const age = 11;
+
+
+// AND && اور
+// if (age > 0 && age < 12) {
+//   console.log(`${name} is a child`);
+// } else if (age >= 13 && age <= 19) {
+//   console.log(`${name} is a teenager`);
+// } else {
+//   console.log(`${name} is an adult`);
+// }
+
+const orderTotal = 420; // bill bangaya 
+const minimumOrder = 400;
+
+const productId = 3;
+
+let deliveryCharges = 49; //default charges
+if(orderTotal > minimumOrder && productId == 12){
+  deliveryCharges = 100;
+}
+
+
+// console.log(deliveryCharges,'delivery charges');
+
+
+// OR || یا
+// if (age < 16 || age > 65) {
+//   console.log(`${name} can not run in race`);
+// } else {
+//   console.log(`${name} is registered for the race`);
+// }
+
+
+// TERNARY OPERATOR
+//single if or else 
+// console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+
+// if(id){
+//   console.log('CORRECT');
+// }else{
+//   console.log('INCORRECT');
+// }
+
+//you can define conditions without braces
+// if(id) //its mean id have something in variable
+//   console.log('CORRECT');
+// else
+//   console.log('INCORRECT');
+
+// let musaddiq;
+// if(!musaddiq) //oposite check karna variable
+//   console.log('CORRECT');
+// else
+//   console.log('INCORRECT');
+
+
+//
+
+
+// const color = 'yellow'; //string
+// if(color === 'red'){
+//   console.log('Color is red');
+// } else if(color === 'blue'){
+//   console.log('Color is blue');
+// } else {
+//   console.log('Color is not red or blue');
+// }
+  
+//switch statement
+
+// const color = 'blue';
+
+// switch (color) {
+//     case 'red':
+//         console.log('Color is red');
+//         break;
+//     case 'blue':
+//         console.log('Color is blue');
+//         break;
+//     default:
+//         console.log('Color is not red or blue');
+//         break;
+// }
+
+
+let day;
+
+switch (new Date().getDay()) {
+    case 0:
+        day = 'Sunday';
+        break;
+    case 1:
+        day = 'Monday';
+        break;
+    case 2:
+        day = 'Tuesday';
+        break;
+    case 3:
+        day = 'Wednesday';
+        break;
+    case 4:
+        day = 'Thursday';
+        break;
+    case 5:
+        day = 'Friday';
+        break;
+    case 6:
+        day = 'Saturday';
+        break;
+}
+
+console.log(`Today is ${day}`);
+
+//functions 
