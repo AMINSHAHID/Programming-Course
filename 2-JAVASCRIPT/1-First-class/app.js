@@ -509,6 +509,136 @@ switch (new Date().getDay()) {
         break;
 }
 
-console.log(`Today is ${day}`);
+// console.log(`Today is ${day}`);
 
 //functions 
+
+// FUNCTION DECLARATIONS
+
+
+function greet(){
+  let name = 'muzammil';
+  // return; //stop executing of function
+  name += ' mustaqeem';
+  // console.log(name);
+  
+  return name;
+}
+
+// console.log(greet());
+
+//                firstparameter , secondparameter
+function greetTwo(firstName,lastName){ //parameter
+  return firstName +' ' + lastName;
+}
+
+// console.log(greetTwo('Muzammil','Mustaqeem'));
+// console.log(greetTwo('Muhammad','Shuja'));
+
+//1st method of declaration
+// function square(x=2,y=2){ //default parameter
+//   return x * y;
+// }
+
+//2nd method of declaration
+const square = function(x=2,y=2){ //default parameter
+  return x * y;
+}
+
+
+// console.log(typeof square,'typeof square')
+// console.log(square());
+// console.log(square(200,9));
+
+
+// (function(){
+  // console.log('this function is working');
+// })();
+
+// IMMIDIATLEY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+
+var add = (function(){
+  // console.log('IIFE Ran..');
+})();
+
+// add();
+
+// template literals
+
+var add = (function(name,lastName){
+  // console.log(`My Name is ${name} ${lastName}`);
+})('Muzammil','Mustaqeem');
+
+
+
+const todo = { //object literals
+  add: function () {
+      console.log('Add todo..');
+  },
+  edit: function (id) { //parameter
+      console.log(`Edit todo ${id}`);
+  },
+}
+
+/*
+todo.add();
+todo.edit(29);
+
+*/
+
+// const numbersUnique = 2;
+// const numbersUnique = new Number(2);
+
+var myFunction = new Function("a", "b", "return a * b"); 
+// console.log(myFunction(1,2));
+// console.log(typeof myFunction)
+
+// const muzammil = 2;
+
+//why use closures
+
+// var laptopHpPrice = 4;
+// function myFunctionTwo() {
+//   return laptopHpPrice * laptopHpPrice;
+// }
+// console.log(myFunctionTwo(),"myFunctionTwo()");
+
+//Wrong 
+// // Initiate counter
+// var counter = 0;
+
+// // Function to increment counter
+// function addTwoThree() {
+//   // var counter = 0;
+//   return counter += 1;
+// }
+
+// console.log(addTwoThree(),"addTwoThree();");
+
+
+
+
+
+// var add = (function () {
+//   var counter = 0;
+//   return function () {counter += 1; return counter;}
+// })();
+
+// console.log(addTwoFour,"addTwoFour()");
+// console.log(addTwoFour(),"addTwoFour()");
+
+
+//closures 
+// define function inside of function
+var addTwoFour = (function () {
+  var counter = 0;
+  return function () {
+    return counter += 1; //return is most important in closures
+  }
+})();
+
+console.log(addTwoFour());
+
+
+
+
