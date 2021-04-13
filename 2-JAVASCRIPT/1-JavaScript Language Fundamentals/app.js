@@ -624,6 +624,9 @@ var myFunction = new Function("a", "b", "return a * b");
 //   return function () {counter += 1; return counter;}
 // })();
 
+// add()
+// add
+
 // console.log(addTwoFour,"addTwoFour()");
 // console.log(addTwoFour(),"addTwoFour()");
 
@@ -637,8 +640,173 @@ var addTwoFour = (function () {
   }
 })();
 
-console.log(addTwoFour());
+// console.log(addTwoFour());
 
 
 
 
+//look at window object
+
+// WINDOW METHODS / OBJECTS / PROPERTIES
+
+// Alert
+// window.alert('Hello World');
+
+// console.log(window,"window");
+
+
+// Prompt
+// const input = prompt();
+// console.log(input,"input");
+
+
+
+// Confirm
+// if(confirm('Are you sure')){
+//   console.log('YES');
+// } else {
+//   console.log('NO');
+// }
+
+
+
+let val89899;
+
+// Outter height and width
+val89899 = window.outerHeight;
+val89899 = window.outerWidth;
+
+// Inner height and width
+val89899 = window.innerHeight;
+val89899 = window.innerWidth;
+
+
+
+// Scroll points
+val89899 = window.scrollY;
+val89899 = window.scrollX;
+
+// // Location Object
+// val89899 = window.location;
+
+// if (window.navigator.geolocation) {
+//   navigator.geolocation.getCurrentPosition(function(position){
+//     console.log(position,"position");
+//   });
+// } else { 
+//   console.log("Geolocation is not supported by this browser.");
+// }
+
+
+// Location Object
+val89899 = window.location;
+val89899 = window.location.hostname;
+val89899 = window.location.port;
+val89899 = window.location.href;
+// val89899 = window.location.search;
+
+// Redirect
+// window.location.href = 'http://google.com';
+//Reload
+
+// setTimeout(()=>{
+//   window.location.reload();
+// },3000)
+
+
+// window.history.go(-2);
+// val89899 = window.history.length;
+
+
+// Navigator Object
+val89899 = window.navigator;
+val89899 = window.navigator.appName;
+val89899 = window.navigator.appVersion;
+val89899 = window.navigator.userAgent;
+val89899 = window.navigator.platform;
+val89899 = window.navigator.vendor;
+val89899 = window.navigator.language;
+
+
+console.log(val89899,"val");
+
+
+
+
+
+
+
+
+// LOOP THROUGH ARRAY
+const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+
+// console.log(cars,"cars")
+for(let i = 0; i < cars.length; i++){
+  console.log(i,"index");
+  console.log(cars[i],"single value of cars");
+}
+
+
+// FOREACH
+// cars.forEach(function(car,index,array){
+//   console.log(`${index} : ${car}`);
+//   console.log(array);
+// })
+
+
+// MAP
+const users  = [
+  {id: 1, name:'John'},
+  {id: 2, name: 'Sara'},
+  {id: 3, name: 'Karen'},
+  {id: 4, name: 'Steve'}
+];
+
+// users.map(function(user,index){
+//   console.log(`${index} : ${user.id} user id`)
+//   console.log(`${index} : ${user.name} user name`)
+// })
+
+
+
+// FOR IN LOOP
+const user = {
+  firstName: 'John', 
+  lastName: 'Doe',
+  age: 40
+}
+
+// console.log(user['firstName'],"    user['firstName']");
+// console.log(user.firstName,"    user.firstName");
+
+// for (let objectKey in user){
+//   console.log(objectKey,"   object Keys");
+//   console.log(user[objectKey]);
+// }
+
+// for(let objectKey in user){
+//   console.log(objectKey,"objectKey");
+//   // console.log(`${index} : ${user[index]}`)
+// }
+
+
+// WHILE LOOP
+
+// let i = 0;
+
+// while(i < 10){
+//   console.log('Number ' + i);
+//   i++;
+// }
+
+
+// DO WHILE
+//it will always run atlease once no matter what
+let i = 100;
+
+do {
+  console.log('Number ' + i);
+  i++;
+}
+
+while(i < 10);
